@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getArticles } from "../components/api";
+import { breakingNews, getArticles } from "../components/api";
 import ArticleList from "../components/articlesList";
 
 export default class Home extends Component {
@@ -20,11 +20,11 @@ export default class Home extends Component {
 	render() {
 		const { articles, apiError } = this.state;
 		return (
-			<div>
-				<h1>All articles</h1>
+			<main>
+				<h1>MyNews</h1>
 				{articles.length > 0 && <ArticleList articles={articles} />}
 				{apiError && <p>Could not find any articles. Please try again.</p>}
-			</div>
+			</main>
 		);
 	}
 }
