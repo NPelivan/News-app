@@ -4,7 +4,7 @@ const ArticleItem = (props) => {
 	const { article } = props;
 	return (
 		<div>
-			<img src={article.urlToImage} height="200" />
+			<img src={article.urlToImage} height="200" alt="" />
 			<h3>{article.title}</h3>
 			<p>{article.author}</p>
 		</div>
@@ -25,6 +25,7 @@ const ArticleList = (props) => {
 	return (
 		<>
 			<div>
+				<h3>News</h3>
 				{props.articles.map((article) => {
 					return (
 						<>

@@ -8,3 +8,11 @@ export const getArticles = async (topic) => {
 	console.log(json);
 	return json.articles;
 };
+
+export const searchArticles = async (topic) => {
+	const response = await fetch(
+		`https://newsapi.org/v2/everything?q=${topic}&sortBy=publishedAt&apiKey=${API_KEY}`
+	);
+	const json = await response.json();
+	return json;
+};
