@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./pages/home";
+import General from "./pages/general";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -8,6 +9,7 @@ class App extends React.Component {
 			<div>
 				<Router>
 					<Route exact path="/" component={Home} />
+					<Route exact path="/general" component={General} />
 				</Router>
 			</div>
 		);
