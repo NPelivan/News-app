@@ -21,6 +21,13 @@ export const generalArticles = async () => {
 		`https://newsapi.org/v2/everything?q=general&sortBy=publishedAt&apiKey=${API_KEY}`
 	);
 	const json = await response.json();
+	return json;
+};
 
+export const businessArticles = async () => {
+	const response = await fetch(
+		`https://newsapi.org/v2/everything?q=business&sortBy=publishedAt&apiKey=${API_KEY}`
+	);
+	const json = await response.json();
 	return json;
 };
