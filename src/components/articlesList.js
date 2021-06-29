@@ -15,7 +15,9 @@ const SideItems = (props) => {
 	const { article } = props;
 	return (
 		<article className="side-articles">
-			<span>{article.publishedAt}</span>
+			<span>
+				{article.publishedAt.split(":").slice(1).join(":").replace("Z", "")}
+			</span>
 			<p>{article.title}</p>
 		</article>
 	);

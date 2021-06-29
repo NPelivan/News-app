@@ -31,3 +31,35 @@ export const businessArticles = async () => {
 	const json = await response.json();
 	return json;
 };
+
+export const healthArticles = async () => {
+	const response = await fetch(
+		`https://newsapi.org/v2/everything?q=health&sortBy=publishedAt&apiKey=${API_KEY}`
+	);
+	const json = await response.json();
+	return json;
+};
+
+export const scienceArticles = async () => {
+	const response = await fetch(
+		`https://newsapi.org/v2/everything?q=science&sortBy=publishedAt&apiKey=${API_KEY}`
+	);
+	const json = await response.json();
+	return json;
+};
+
+export const sportsArticles = async () => {
+	const response = await fetch(
+		`https://newsapi.org/v2/everything?q=sports&sortBy=publishedAt&apiKey=${API_KEY}`
+	);
+	const json = await response.json();
+	return json;
+};
+
+export const techArticles = async () => {
+	const response = await fetch(
+		`https://newsapi.org/v2/everything?q=technology&sortBy=publishedAt&apiKey=${API_KEY}`
+	);
+	const json = await response.json();
+	return json;
+};
