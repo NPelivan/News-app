@@ -3,6 +3,7 @@ import { generalArticles, searchArticles } from "../components/api";
 import Navbar from "../components/navbar";
 import SearchBar from "../components/searchBar";
 import ArticleList from "../components/articlesList";
+import Topbar from "../components/topbar";
 
 export default class General extends Component {
 	state = {
@@ -39,6 +40,7 @@ export default class General extends Component {
 		const { articles, apiError, loading } = this.state;
 		return (
 			<main>
+				<Topbar />
 				<h1>MyNews</h1>
 				<SearchBar searchForTopic={this.searchForTopic} />
 				<Navbar />

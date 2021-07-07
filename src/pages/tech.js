@@ -3,6 +3,7 @@ import { techArticles, searchArticles } from "../components/api";
 import ArticleList from "../components/articlesList";
 import SearchBar from "../components/searchBar";
 import Navbar from "../components/navbar";
+import Topbar from "../components/topbar";
 
 export default class Tech extends Component {
 	state = {
@@ -38,6 +39,7 @@ export default class Tech extends Component {
 		const { articles, apiError, loading } = this.state;
 		return (
 			<main>
+				<Topbar />
 				<h1>MyNews</h1>
 				<SearchBar searchForTopic={this.searchForTopic} />
 				<Navbar />
