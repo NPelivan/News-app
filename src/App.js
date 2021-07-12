@@ -7,6 +7,7 @@ import Science from "./pages/science";
 import Sports from "./pages/sports";
 import Tech from "./pages/tech";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./styles/style.scss";
 
 class App extends React.Component {
 	render() {
