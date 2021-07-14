@@ -40,12 +40,18 @@ export default class Sports extends Component {
 		return (
 			<main>
 				<Topbar />
-				<h1>MyNews</h1>
-				<SearchBar searchForTopic={this.searchForTopic} />
-				<Navbar />
-				{loading && <p>Searching for articles...</p>}
-				{articles.length > 0 && <ArticleList articles={articles} />}
-				{apiError && <p>Could not find any articles. Please try again.</p>}
+				<section className="main_container">
+					<div className="header_component">
+						<h1>
+							<span>My</span>News
+						</h1>
+						<SearchBar searchForTopic={this.searchForTopic} />
+					</div>
+					<Navbar />
+					{loading && <p>Searching for articles...</p>}
+					{articles.length > 0 && <ArticleList articles={articles} />}
+					{apiError && <p>Could not find any articles. Please try again.</p>}
+				</section>
 			</main>
 		);
 	}

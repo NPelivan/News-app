@@ -1,0 +1,34 @@
+@import "_fonts.scss";
+main {
+	font-family: "Inter", sans-serif;
+
+	.main_container {
+		width: 76.042%;
+		margin: 35px auto 0;
+
+		.header_component {
+			display: flex;
+			align-items: center;
+			h1 {
+				font-family: "Inter", sans-serif;
+				margin-right: 43px;
+				font-size: 32px;
+				font-weight: 900;
+				span {
+					font-size: 32px;
+					color: $maincolor;
+				}
+			}
+
+			div {
+				width: 66.21%;
+				form {
+					input {
+						width: 80%;
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+}
