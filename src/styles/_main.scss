@@ -1,6 +1,7 @@
 @import "_fonts.scss";
 main {
 	font-family: "Inter", sans-serif;
+	background-color: $background;
 
 	.main_container {
 		width: 76.042%;
@@ -23,9 +24,33 @@ main {
 			div {
 				width: 66.21%;
 				form {
+					img {
+						position: relative;
+						left: 4.5%;
+						top: 4px;
+					}
 					input {
-						width: 80%;
+						width: 83%;
 						height: 50px;
+						padding-left: 6%;
+						padding-top: 15px;
+						padding-bottom: 15px;
+						border-radius: 10px;
+						box-shadow: 0 1px 2px -1px #c8cad1;
+						background-color: #ffffff;
+						border: 0;
+					}
+					button {
+						position: relative;
+						right: 13%;
+						padding: 0px 16px;
+						font-weight: bold;
+						color: $topbarwhite;
+						border-radius: 6px;
+						background-color: $maincolor;
+						height: 40px;
+						border: 0;
+						font-size: 15px;
 					}
 				}
 			}
