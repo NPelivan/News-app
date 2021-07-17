@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { healthArticles, searchArticles } from "../components/api";
-import Navbar from "../components/navbar";
+
 import SearchBar from "../components/searchBar";
 import ArticleList from "../components/articlesList";
 import Topbar from "../components/topbar";
@@ -47,7 +47,9 @@ export default class Health extends Component {
 						</h1>
 						<SearchBar searchForTopic={this.searchForTopic} />
 					</div>
-					<Navbar />
+
+					<hr />
+
 					{loading && <p>Searching for articles...</p>}
 					{articles.length > 0 && <ArticleList articles={articles} />}
 					{apiError && <p>Could not find any articles. Please try again.</p>}

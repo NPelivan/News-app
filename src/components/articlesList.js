@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./navbar";
 
 const ArticleItem = (props) => {
 	const { article } = props;
@@ -29,7 +30,8 @@ const SideItems = (props) => {
 
 const ArticleList = (props) => {
 	return (
-		<>
+		<div className="news-container">
+			<Navbar />
 			<div>
 				<h3>News</h3>
 				{props.articles.map((article) => {
@@ -51,7 +53,7 @@ const ArticleList = (props) => {
 					);
 				})}
 			</div>
-		</>
+		</div>
 	);
 };
 export default ArticleList;

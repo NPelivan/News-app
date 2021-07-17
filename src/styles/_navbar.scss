@@ -1,0 +1,36 @@
+nav {
+	ul {
+		list-style-type: none;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 63px;
+
+			img:hover {
+				filter: invert(11%) sepia(78%) saturate(3075%) hue-rotate(347deg)
+					brightness(142%) contrast(98%);
+				cursor: pointer;
+			}
+
+			li:hover {
+				color: $maincolor;
+			}
+
+			a {
+				text-decoration: none;
+				margin-top: 4px;
+				font-size: 10px;
+				color: $navcolor;
+				opacity: 0.5;
+				font-weight: 600;
+				letter-spacing: 0.1px;
+
+				&:hover {
+					color: $maincolor;
+				}
+			}
+		}
+	}
+}

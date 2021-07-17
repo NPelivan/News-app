@@ -7,6 +7,14 @@ main {
 		width: 76.042%;
 		margin: 35px auto 0;
 
+		hr {
+			margin-top: 28px;
+			margin-bottom: 24px;
+			background-color: $linecolor;
+			opacity: 10%;
+			height: 1px;
+		}
+
 		.header_component {
 			display: flex;
 			align-items: center;
@@ -54,6 +62,10 @@ main {
 					}
 				}
 			}
+		}
+
+		.flex-container {
+			display: flex;
 		}
 	}
 }

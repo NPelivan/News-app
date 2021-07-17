@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { techArticles, searchArticles } from "../components/api";
 import ArticleList from "../components/articlesList";
 import SearchBar from "../components/searchBar";
-import Navbar from "../components/navbar";
+
 import Topbar from "../components/topbar";
 
 export default class Tech extends Component {
@@ -47,7 +47,9 @@ export default class Tech extends Component {
 						</h1>
 						<SearchBar searchForTopic={this.searchForTopic} />
 					</div>
-					<Navbar />
+
+					<hr />
+
 					{loading && <p>Searching for articles...</p>}
 					{articles.length > 0 && <ArticleList articles={articles} />}
 					{apiError && <p>Could not find any articles. Please try again.</p>}
