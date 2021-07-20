@@ -1,34 +1,43 @@
 nav {
+	margin-right: 25px;
 	ul {
 		list-style-type: none;
 
 		li {
+			width: 63px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			height: 63px;
+			justify-content: space-between;
 
-			img:hover {
-				filter: invert(11%) sepia(78%) saturate(3075%) hue-rotate(347deg)
-					brightness(142%) contrast(98%);
-				cursor: pointer;
-			}
-
-			li:hover {
+			&:hover {
 				color: $maincolor;
+				border-radius: 5px;
+				background-color: #ffffff;
+				box-shadow: 0 1px 2px -1px #c8cad1;
 			}
 
 			a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 				text-decoration: none;
-				margin-top: 4px;
-				font-size: 10px;
+				justify-content: space-between;
 				color: $navcolor;
-				opacity: 0.5;
-				font-weight: 600;
-				letter-spacing: 0.1px;
+				margin: 20%;
 
 				&:hover {
 					color: $maincolor;
+					filter: invert(11%) sepia(78%) saturate(3075%) hue-rotate(347deg)
+						brightness(142%) contrast(98%);
+				}
+
+				span {
+					font-size: 10px;
+					opacity: 0.5;
+					font-weight: 600;
+					letter-spacing: 0.1px;
+					margin-top: 4px;
 				}
 			}
 		}

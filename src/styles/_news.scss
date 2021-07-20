@@ -1,3 +1,33 @@
 .news-container {
 	display: flex;
+
+	.news-content {
+		.news-content-flex {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 330px 330px 330px;
+			grid-template-rows: 250px auto 250px;
+			column-gap: 40px;
+			row-gap: 22px;
+
+			img {
+				width: 100%;
+			}
+
+			.latest-news {
+				grid-column: 3;
+				grid-row: 1 / auto;
+				overflow-y: auto;
+
+				h1 {
+					display: flex;
+					align-items: center;
+					img {
+						width: 8%;
+						margin-right: 4%;
+					}
+				}
+			}
+		}
+	}
 }

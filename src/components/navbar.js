@@ -14,32 +14,39 @@ export default class Navbar extends Component {
 			<nav>
 				<ul>
 					<li>
-						<img src={Homeicon} alt="" />
-						<Link to="/">Home</Link>
+						<Link to="/">
+							<img src={Homeicon} alt="" /> <span>Home</span>
+						</Link>
 					</li>
 					<li>
-						<img src={Generalicon} alt="" />
-						<Link to="/general">General</Link>
+						<Link to="/general">
+							<img src={Generalicon} alt="" /> <span>General</span>
+						</Link>
 					</li>
 					<li>
-						<img src={Businessicon} alt="" />
-						<Link to="/business">Business</Link>
+						<Link to="/business">
+							<img src={Businessicon} alt="" /> <span>Business</span>
+						</Link>
 					</li>
 					<li>
-						<img src={Healthicon} alt="" />
-						<Link to="/health">Health</Link>
+						<Link to="/health">
+							<img src={Healthicon} alt="" /> <span>Health</span>
+						</Link>
 					</li>
 					<li>
-						<img src={Scienceicon} alt="" />
-						<Link to="/science">Science</Link>
+						<Link to="/science">
+							<img src={Scienceicon} alt="" /> <span>Science</span>
+						</Link>
 					</li>
 					<li>
-						<img src={Sportsicon} alt="" />
-						<Link to="/sports">Sports</Link>
+						<Link to="/sports">
+							<img src={Sportsicon} alt="" /> <span>Sports</span>
+						</Link>
 					</li>
 					<li>
-						<img src={Techicon} alt="" />
-						<Link to="/technology">Technology</Link>
+						<Link to="/technology">
+							<img src={Techicon} alt="" /> <span>Technology</span>
+						</Link>
 					</li>
 				</ul>
 			</nav>
