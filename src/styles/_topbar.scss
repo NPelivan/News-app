@@ -45,3 +45,40 @@
 		color: $topbarwhite;
 	}
 }
+
+@media (max-width: 1139px) {
+	.topbar {
+		p {
+			left: 138px;
+		}
+		p:nth-of-type(2) {
+			left: 420px;
+			top: 21px;
+		}
+		button {
+			right: 230px;
+		}
+
+		button:nth-of-type(2) {
+			right: 138px;
+		}
+	}
+}
+
+@media (max-width: 1025px) {
+	.topbar {
+		p {
+			left: 122px;
+		}
+		p:nth-of-type(2) {
+			left: 380px;
+		}
+		button {
+			right: 220px;
+		}
+
+		button:nth-of-type(2) {
+			right: 130px;
+		}
+	}
+}

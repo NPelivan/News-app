@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./navbar";
 import Latesticon from "../assets/Latest.svg";
+import Arrowicon from "../assets/Down.svg";
 
 const ArticleItem = (props) => {
 	const { article } = props;
 	return (
-		<div>
+		<div className="news-article">
 			<img src={article.urlToImage} alt="" />
 			<h3>{article.title}</h3>
 			<p>{article.author}</p>
@@ -51,6 +52,11 @@ const ArticleList = (props) => {
 								</>
 							);
 						})}
+
+						<div>
+							<span>See all news</span>
+							<img src={Arrowicon} alt="" />
+						</div>
 					</div>
 					{props.articles.map((article) => {
 						return (

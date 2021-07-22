@@ -69,3 +69,26 @@ main {
 		}
 	}
 }
+
+@media (max-width: 1346px) {
+	hr {
+		width: 100%;
+	}
+	.header_component {
+		div {
+			form {
+				display: flex;
+				align-items: center;
+
+				img {
+					position: relative;
+					top: 5%;
+				}
+				button {
+					position: relative;
+					left: -15%;
+				}
+			}
+		}
+	}
+}
