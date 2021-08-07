@@ -4,6 +4,7 @@ import ArticleList from "../components/articlesList";
 import SearchBar from "../components/searchBar";
 
 import Topbar from "../components/topbar";
+import MobileNav from "../components/mobileNav";
 
 export default class Home extends Component {
 	state = {
@@ -42,9 +43,12 @@ export default class Home extends Component {
 				<Topbar />
 				<section className="main_container">
 					<div className="header_component">
-						<h1>
-							<span>My</span>News
-						</h1>
+						<div className="header">
+							<h1>
+								<span>My</span>News
+							</h1>
+							<MobileNav />
+						</div>
 						<SearchBar searchForTopic={this.searchForTopic} />
 					</div>
 

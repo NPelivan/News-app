@@ -3,6 +3,7 @@ import { businessArticles, searchArticles } from "../components/api";
 import SearchBar from "../components/searchBar";
 import ArticleList from "../components/articlesList";
 import Topbar from "../components/topbar";
+import MobileNav from "../components/mobileNav";
 
 export default class Business extends Component {
 	state = {
@@ -41,9 +42,13 @@ export default class Business extends Component {
 				<Topbar />
 				<section className="main_container">
 					<div className="header_component">
-						<h1>
-							<span>My</span>News
-						</h1>
+						<div className="header">
+							<h1>
+								<span>My</span>News
+							</h1>
+							<MobileNav />
+						</div>
+
 						<SearchBar searchForTopic={this.searchForTopic} />
 					</div>
 

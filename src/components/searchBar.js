@@ -18,7 +18,7 @@ export default class SearchBar extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="search-container">
 				<form onSubmit={this.handleSubmit}>
 					<img src={SearchImg} alt="" />
 					<input

@@ -18,6 +18,9 @@ main {
 		.header_component {
 			display: flex;
 			align-items: center;
+			.header {
+				width: 15%;
+			}
 			h1 {
 				font-family: "Inter", sans-serif;
 				margin-right: 43px;
@@ -62,6 +65,10 @@ main {
 					}
 				}
 			}
+
+			.mobile-nav {
+				display: none;
+			}
 		}
 
 		.flex-container {
@@ -88,6 +95,55 @@ main {
 					position: relative;
 					left: -15%;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	html {
+		background-color: $background;
+	}
+
+	main {
+		.main_container {
+			margin: auto;
+			width: 91.467%;
+
+			.header_component {
+				display: block;
+
+				.header {
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+					margin-top: 5%;
+					align-items: center;
+				}
+
+				.mobile-nav {
+					display: flex;
+					width: 7%;
+					height: 3vh;
+					justify-content: flex-end;
+				}
+
+				.search-container {
+					margin-top: 20px;
+					width: 100%;
+					input {
+						width: 100%;
+					}
+					form {
+						width: 100%;
+					}
+					button {
+						display: none;
+					}
+				}
+			}
+			hr {
+				display: none;
 			}
 		}
 	}
