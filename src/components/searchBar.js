@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SearchImg from "../assets/Search.svg";
 
 export default class SearchBar extends Component {
 	constructor(props) {
@@ -20,7 +19,6 @@ export default class SearchBar extends Component {
 		return (
 			<div className="search-container">
 				<form onSubmit={this.handleSubmit}>
-					<img src={SearchImg} alt="" />
 					<input
 						placeholder="Search news"
 						name="topic"

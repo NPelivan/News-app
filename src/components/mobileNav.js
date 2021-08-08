@@ -10,6 +10,7 @@ import Healthicon from "../assets/Health.svg";
 import Scienceicon from "../assets/Science.svg";
 import Sportsicon from "../assets/Sports.svg";
 import Techicon from "../assets/TV-Guide.svg";
+import SearchBar from "./searchBar";
 
 export default class MobileNav extends Component {
 	state = {
@@ -25,11 +26,18 @@ export default class MobileNav extends Component {
 		return (
 			<div className="mobile-nav">
 				<img src={Hamburger} alt="" onClick={this.clickNav} />
+
 				{this.state.on && (
 					<div className="mobile-nav-trigger">
-						<div>
+						<div className="close-button">
 							<img src={Close} alt="" onClick={this.clickNav} />
 						</div>
+
+						<h1>
+							<span>My</span>News
+						</h1>
+
+						<SearchBar searchForTopic={this.searchForTopic} />
 
 						<nav className="mobile-nav-bar">
 							<ul>
