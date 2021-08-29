@@ -121,3 +121,35 @@
 		}
 	}
 }
+
+.mobile-news {
+	display: none;
+}
+
+@media (max-width: 769px) {
+	.news-content {
+		display: none;
+	}
+
+	.news-article {
+		width: 100%;
+		margin-bottom: 16px;
+		background-color: $topbarwhite;
+		border-radius: 8px;
+		img {
+			width: 100%;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+
+		h3 {
+			margin-top: 33px;
+			font-weight: 500;
+			padding-bottom: 19px;
+			padding-left: 17px;
+		}
+		p {
+			display: none;
+		}
+	}
+}

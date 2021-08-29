@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar";
 import Latesticon from "../assets/Latest.svg";
 import Arrowicon from "../assets/Down.svg";
+import Tabs from "./Tabs";
 
 const ArticleItem = (props) => {
 	const { article } = props;
@@ -66,6 +67,30 @@ const ArticleList = (props) => {
 						);
 					})}
 				</div>
+			</div>
+
+			<div className="mobile-news">
+				<Tabs>
+					<div label="Featured">
+						{props.articles.map((article) => {
+							return (
+								<>
+									<ArticleItem article={article}>{article.title}</ArticleItem>
+								</>
+							);
+						})}
+					</div>
+
+					<div label="Latest">
+						{props.articles.map((article) => {
+							return (
+								<>
+									<SideItems article={article}>{article.title}</SideItems>
+								</>
+							);
+						})}
+					</div>
+				</Tabs>
 			</div>
 		</div>
 	);

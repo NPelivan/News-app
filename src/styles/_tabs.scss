@@ -1,0 +1,29 @@
+.mobile-news {
+	display: none;
+}
+
+@media (max-width: 769px) {
+	.mobile-news {
+		display: flex;
+		width: 100%;
+
+		.tab-list {
+			list-style-type: none;
+			display: flex;
+			width: 30%;
+			margin: auto;
+			justify-content: space-around;
+			font-size: 16px;
+			font-weight: 600;
+			align-items: center;
+			margin-bottom: 16px;
+
+			.tab-list-active {
+				color: $maincolor;
+				border-radius: 20px;
+				background-color: rgba(187, 30, 30, 0.1);
+				padding: 10px 16px;
+			}
+		}
+	}
+}
