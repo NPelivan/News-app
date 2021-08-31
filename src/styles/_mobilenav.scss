@@ -21,10 +21,11 @@
 		}
 
 		.search-container {
-			width: 100%;
+			//width: 100%;
+			margin: 0;
 			form {
 				input {
-					min-width: 94%;
+					max-width: 94%;
 					margin: 64px auto;
 					box-shadow: 0 1px 2px -1px #c8cad1;
 				}
@@ -48,6 +49,7 @@
 					margin: auto;
 					width: 95px;
 					height: 100%;
+
 					a {
 						margin: 0;
 						height: 100%;
@@ -64,6 +66,21 @@
 							align-items: center;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 426px) {
+	.mobile-nav {
+		.mobile-nav-trigger {
+			.mobile-nav-bar {
+				ul {
+					display: grid;
+					grid-template-columns: 30% 30% 30%;
+					grid-template-rows: 100px 100px 100px;
+					grid-gap: 20px;
 				}
 			}
 		}

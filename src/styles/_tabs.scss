@@ -27,3 +27,28 @@
 		}
 	}
 }
+
+@media (max-width: 426px) {
+	.mobile-news {
+		.tab-list {
+			width: 45%;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (max-width: 376px) {
+	.mobile-news {
+		.tab-list {
+			width: 50%;
+		}
+	}
+}
+
+@media (max-width: 321px) {
+	.mobile-news {
+		.tab-list {
+			width: 55%;
+		}
+	}
+}

@@ -20,36 +20,41 @@
 			}
 
 			.latest-news {
-				height: 321px;
 				grid-column: 3;
 				grid-row: 1 / auto;
-				overflow-y: scroll;
-				overflow-x: hidden;
+
 				background-color: #ffffff;
 				box-shadow: 0 1px 2px -1px #c8cad1;
 				border-radius: 8px;
 
-				&::-webkit-scrollbar {
-					width: 4px;
-					border-radius: 2px;
-					height: 10px;
-				}
-				&::-webkit-scrollbar-track {
-					background: transparent;
-				}
-				&::-webkit-scrollbar-thumb {
-					background: rgba(0, 0, 0, 0.24);
-					height: 68px;
-					border-radius: 2px;
-				}
-				&::-webkit-scrollbar-button {
-					width: 50px;
+				div:nth-of-type(1) {
+					display: block;
+					padding: 0;
+					overflow-y: scroll;
+					height: 300px;
+					&::-webkit-scrollbar {
+						width: 4px;
+						border-radius: 2px;
+						height: 10px;
+					}
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: rgba(0, 0, 0, 0.24);
+						height: 68px;
+						border-radius: 2px;
+					}
+					&::-webkit-scrollbar-button {
+						width: 50px;
+					}
 				}
 
 				h1 {
 					display: flex;
 					align-items: center;
 					padding-top: 18px;
+					padding-bottom: 12px;
 
 					img {
 						width: 30px;
@@ -58,10 +63,11 @@
 					}
 				}
 
-				div {
+				div:nth-of-type(2) {
 					display: flex;
 					padding: 15px 14px;
 					align-items: center;
+					margin-bottom: 0;
 
 					span {
 						color: $timecolor;
@@ -150,6 +156,49 @@
 		}
 		p {
 			display: none;
+		}
+	}
+
+	.latest-news-mobile {
+		background-color: $topbarwhite;
+		border-radius: 8px;
+		padding: 18px 15px;
+		height: 70vh;
+		h1 {
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+			padding-bottom: 13px;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		div {
+			height: 58vh;
+			overflow-y: auto;
+			.side-articles {
+				padding-top: 13px;
+				padding-bottom: 13px;
+				border-bottom: 1px solid $background;
+				span {
+					font-size: 10px;
+					color: $timecolor;
+				}
+				p {
+					font-weight: 500;
+				}
+			}
+		}
+
+		div:nth-of-type(2) {
+			height: 5vh;
+			display: flex;
+			align-items: center;
+			color: $timecolor;
+			font-size: 14px;
+			font-weight: 500;
 		}
 	}
 }

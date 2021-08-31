@@ -46,13 +46,15 @@ const ArticleList = (props) => {
 							Latest news
 						</h1>
 
-						{props.articles.map((article) => {
-							return (
-								<>
-									<SideItems article={article}>{article.title}</SideItems>
-								</>
-							);
-						})}
+						<div>
+							{props.articles.map((article) => {
+								return (
+									<>
+										<SideItems article={article}>{article.title}</SideItems>
+									</>
+								);
+							})}
+						</div>
 
 						<div>
 							<span>See all news</span>
@@ -82,13 +84,26 @@ const ArticleList = (props) => {
 					</div>
 
 					<div label="Latest">
-						{props.articles.map((article) => {
-							return (
-								<>
-									<SideItems article={article}>{article.title}</SideItems>
-								</>
-							);
-						})}
+						<div className="latest-news-mobile">
+							<h1>
+								<img src={Latesticon} alt="" />
+								Latest news
+							</h1>
+
+							<div>
+								{props.articles.map((article) => {
+									return (
+										<>
+											<SideItems article={article}>{article.title}</SideItems>
+										</>
+									);
+								})}
+							</div>
+							<div>
+								<span>See all news</span>
+								<img src={Arrowicon} alt="" />
+							</div>
+						</div>
 					</div>
 				</Tabs>
 			</div>
